@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+
+angular.module('${1:myApp}').controller('${2:MyController}', ['\$scope', '\$pusher',
+  function(\$scope, \$pusher) {
+    var client = new Pusher('${3:APP_KEY}');
+    var pusher = $pusher(client);
+}]);
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pusher-controller</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

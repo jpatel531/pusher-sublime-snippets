@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+var ${1:myChannel} = pusher.subscribe('${2:my-channel}');
+
+${1:myChannel}.bind('${3:new-event}', function(${4:data}){
+	${5}
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pusher-per-channel-bind</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
