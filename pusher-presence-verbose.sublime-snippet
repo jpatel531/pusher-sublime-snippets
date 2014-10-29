@@ -1,9 +1,13 @@
 <snippet>
 	<content><![CDATA[
-angular.module('${1:myApp}', ['pusher-angular'])
+var ${1:presenceChannel} = pusher.subscribe('presence-${2:users}');
+
+$scope.members = ${1}.members;
+
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>pusher-app</tabTrigger>
+	<tabTrigger>pusher-presence-verbose</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.js</scope>
 </snippet>
